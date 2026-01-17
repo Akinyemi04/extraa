@@ -51,7 +51,7 @@ const Popup = ({ cancelPopup }: props) => {
   };
   return (
     <div className="absolute inset-0 z-50 flex items-center justify-center  bg-black/40">
-      <section className="bg-white rounded-xl p-3 w-153.75">
+      <section className="bg-white rounded-xl p-4 w-153.75">
         <header className="flex justify-between items-center  mb-1">
           <h3 className={`test font-medium text-[24px]`}>Add New Role</h3>
           <span
