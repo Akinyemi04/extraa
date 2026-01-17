@@ -84,7 +84,7 @@ const Popup = ({ cancelPopup }: props) => {
         <h6 className={`test text-[15px] mt-2 font-medium my-3`}>
           Permissions
         </h6>
-        <div className="flex flex-wrap gap-2 bg-[#3636361A] p-3 mb-4  rounded-xl font-medium">
+        <div className="flex flex-wrap gap-2 bg-[#F7F7F7] p-3 mb-4  rounded-xl font-medium">
           {selectedPermissions.map((permission) => (
             <span
               key={permission}

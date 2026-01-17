@@ -15,6 +15,7 @@ export default function Input({
   value,
   onChange,
 }: FloatingInputProps) {
+  console.log("value", !value?.trim());
   return (
     <div className=" group relative w-full my-3">
       <input
@@ -24,8 +25,11 @@ export default function Input({
         onChange={onChange}
         placeholder={label}
         className={` ${empty && "ring-1 ring-red-300"}
-          peer  w-full rounded-xl border border-[#E1E1E1]
-          px-3 pt-3 pb-3 text-[14px] font-medium
+
+        ${
+          !value?.trim() ? " pt-3 pb-3" : "pt-5 pb-2"
+        }  peer  w-full rounded-xl border border-[#E1E1E1]
+          px-3 text-[14px] font-medium
           transition-all duration-200
           focus:border-[#363636]
        
@@ -35,11 +39,15 @@ export default function Input({
 
       <label
         htmlFor={id}
-        className="
+        className={`
           absolute left-2 top-1/2 -translate-y-1/2
           bg-white px-1
           text-gray-400
-          opacity-0
+          ${
+            !value?.trim()
+              ? "opacity-0"
+              : "top-2 text-[10px] text-[#00000066] translate-y-0"
+          }
           transition-all duration-200
 
           peer-placeholder-shown:top-1/2
@@ -51,7 +59,7 @@ export default function Input({
           peer-focus:text-[10px]
           peer-focus:text-[#00000066]
           peer-focus:translate-y-0
-        "
+        `}
       >
         {label}
       </label>

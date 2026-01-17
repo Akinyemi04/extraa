@@ -12,7 +12,7 @@ const Page = () => {
   return (
     <div className="bg-white rounded-2xl min-h-screen w-full p-3 flex flex-col relative">
       <h3
-        className={` test border rounded-xl pl-2 font-medium text-[18px] border-[#36363633] mb-3 py-1`}
+        className={` test border rounded-xl pl-4 font-medium text-[18px] border-[#36363633] mb-3 py-1 bg-[#f7f7f7]`}
       >
         Roles
       </h3>
@@ -30,12 +30,12 @@ const Page = () => {
             </span>
           </aside>
           <aside className="flex gap-3">
-            <div className="border rounded-md border-[#D0D5DD] flex p-1 items-center focus-within:ring-1 focus-within:ring-[#363636]">
+            <div className="border rounded-md border-[#D0D5DD] flex pl-3 py-2 pr-1 items-center focus-within:ring-1 focus-within:ring-[#363636]">
               <Image
                 src={"/images/search.png"}
                 alt=""
-                width={12}
-                height={12}
+                width={14}
+                height={14}
                 className="object-contain"
               ></Image>
               <input
@@ -52,9 +52,9 @@ const Page = () => {
               onClick={() => {
                 setShowPopup(true);
               }}
-              className="ml-2 flex gap-1 bg-[#000130] text-white cursor-pointer hover:opacity-70 trasnsition-all duration-100 ease-in-out rounded-md text-[14px] px-3 py-1 items-center"
+              className="ml-2 flex gap-1 bg-[#000130] text-white cursor-pointer hover:opacity-70 trasnsition-all duration-100 ease-in-out rounded-lg text-[14px] px-3 py-1 items-center"
             >
-              <AddIcon className="h-4 w-4 scale-90" />
+              <AddIcon className="h-4 w-4 scale-80" />
               <span>Add new Role</span>
             </button>
           </aside>
@@ -83,12 +83,12 @@ const Page = () => {
           <div className="flex gap-2 text-[12px]">
             {" "}
             <button className="p-2 border rounded-lg cursor-not-allowed border-[##D0D5DD] text-[#D0D5DD] flex items-center gap-1">
-              <ArrowBackIcon className="h-4 w-4 scale-90" />{" "}
+              <ArrowBackIcon className="h-4 w-4 scale-80" />{" "}
               <span className="text-[14px]">Previous</span>
             </button>
             <button className="p-2 border rounded-lg cursor-not-allowed border-[##D0D5DD] text-[#D0D5DD] flex items-center gap-1">
               <span className="text-[14px]">Next</span>{" "}
-              <ArrowForwardIcon className="h-4 w-4 scale-90" />{" "}
+              <ArrowForwardIcon className="h-4 w-4 scale-80" />{" "}
             </button>
           </div>
         </footer>
