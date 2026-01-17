@@ -17,7 +17,7 @@ pnpm dev
 bun dev
 ```
 
-using the sidebar navigate to view roles in there the assessment can be view.. every other route are in active
+using the sidebar navigate to view roles in there the assessment can be view.. every other route are in active with a 404 error
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
