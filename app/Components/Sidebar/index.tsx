@@ -3,14 +3,8 @@ import React from "react";
 import { LayoutDashboard, Bell, FileText, LogsIcon } from "lucide-react";
 import SidebarItem from "./SidebarItem";
 import Image from "next/image";
-import localFont from "next/font/local";
-import SubdirectoryArrowRightIcon from "@mui/icons-material/SubdirectoryArrowRight";
 
-const redwing = localFont({
-  src: "../../fonts/Redwing/Redwing-medium.otf",
-  display: "swap",
-  variable: "--font-redwing",
-});
+import SubdirectoryArrowRightIcon from "@mui/icons-material/SubdirectoryArrowRight";
 
 // sidebar.config.ts
 const sidebarItems = [
@@ -129,9 +123,7 @@ const index = () => {
             className="object-cover"
             height={40}
           ></Image>{" "}
-          <span
-            className={`${redwing.className} font-medium text-[18px] text-white mt-1`}
-          >
+          <span className={`test font-medium text-[18px] text-white mt-1`}>
             10Ants
           </span>
         </header>

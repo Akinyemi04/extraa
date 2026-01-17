@@ -1,14 +1,10 @@
 "use client";
 import React, { useState } from "react";
-import localFont from "next/font/local";
+
 import CloseIcon from "@mui/icons-material/Close";
 import AddIcon from "@mui/icons-material/Add";
 import Input from "./Input";
 
-const redwing = localFont({
-  src: "../../fonts/Redwing/Redwing-medium.otf",
-  display: "swap",
-});
 interface props {
   cancelPopup: () => void;
 }
@@ -57,9 +53,7 @@ const Popup = ({ cancelPopup }: props) => {
     <div className="absolute inset-0 z-50 flex items-center justify-center  bg-black/40">
       <section className="bg-white rounded-xl p-3 w-153.75">
         <header className="flex justify-between items-center  mb-1">
-          <h3 className={`${redwing.className} font-medium text-[24px]`}>
-            Add New Role
-          </h3>
+          <h3 className={`test font-medium text-[24px]`}>Add New Role</h3>
           <span
             onClick={cancelPopup}
             className="cursor-pointer hover:opacity-70 transition-opacity duration-100 ease-in-out"
@@ -87,9 +81,7 @@ const Popup = ({ cancelPopup }: props) => {
           </p>
         )}
 
-        <h6
-          className={` ${redwing.className} text-[15px] mt-2 font-medium my-3`}
-        >
+        <h6 className={`test text-[15px] mt-2 font-medium my-3`}>
           Permissions
         </h6>
         <div className="flex flex-wrap gap-2 bg-[#3636361A] p-3 mb-4  rounded-xl font-medium">

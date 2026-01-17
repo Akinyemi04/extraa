@@ -4,12 +4,7 @@ import Image from "next/image";
 import AddIcon from "@mui/icons-material/Add";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import localFont from "next/font/local";
 import Popup from "./Popup";
-const redwing = localFont({
-  src: "../../fonts/Redwing/Redwing-medium.otf",
-  display: "swap",
-});
 
 const Page = () => {
   const [Search, setSearch] = useState("");
@@ -17,7 +12,7 @@ const Page = () => {
   return (
     <div className="bg-white rounded-2xl min-h-screen w-full p-3 flex flex-col relative">
       <h3
-        className={` ${redwing.className} border rounded-xl pl-2 font-medium text-[18px] border-[#36363633] mb-3 py-1`}
+        className={` test border rounded-xl pl-2 font-medium text-[18px] border-[#36363633] mb-3 py-1`}
       >
         Roles
       </h3>
